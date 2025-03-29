@@ -42,12 +42,24 @@ public abstract class User implements Serializable {
     }
 
     // --- Accessors ---
-    public int getUserID() { return userID; }
-    public String getFirstName() { return firstName; }
-    public String getLastName() { return lastName; }
-    public UserRole getRole() { return role; }
-    public String getEmail() { return email; }
-    public String getHashedPassword() { return hashedPassword; }
+    public int getUserID() {
+        return userID;
+    }
+    public String getFirstName() {
+        return firstName;
+    }
+    public String getLastName() {
+        return lastName;
+    }
+    public UserRole getRole() {
+        return role;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getHashedPassword() {
+        return hashedPassword;
+    }
 
     // --- Mutators ---
 
