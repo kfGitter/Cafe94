@@ -2,7 +2,7 @@ package com.cafe94.domain;
 
 import com.cafe94.enums.UserRole;
 // Assuming ScheduleEntry is in the same package or imported correctly
-// import com.cafe94.domain.ScheduleEntry;
+import com.cafe94.domain.ScheduleEntry;
 import java.util.List;
 
 /**
@@ -14,7 +14,7 @@ import java.util.List;
  * Drivers view assigned delivery orders and
  * update their status (e.g., "OUT_FOR_DELIVERY",
  * "DELIVERED"). These operations typically involve interacting with an OrderService
- * or a dedicated DeliveryService, which would verify the user's DRIVER role and permissions.
+ * or a dedicated DeliveryService, verifying the user's DRIVER role and permissions.
  */
 public class Driver extends Staff {
 
