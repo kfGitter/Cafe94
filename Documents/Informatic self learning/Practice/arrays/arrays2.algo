@@ -1,0 +1,28 @@
+PROCEDURE Dot_product(VAR v1, v2 : ARRAY_OF FLOAT[7], ps: FLOAT, i : INTEGER, cos : cos(v1, V2))
+BEGIN
+    FOR i FROM 0 TO length(v1) STEP 1  DO
+    ps = v1[i] * v2[i] * cos
+    END_FOR
+    vector1 = [1, 2, 3]
+    vector2 = [4, 5, 6]
+    write("the dot product of the given vectors is egal to : " ps)
+END
+
+ALGORITHM orthogonal_or_nah
+VAR
+vn : FLOAT 
+n : INTEGER 
+ps : product(vn[i])
+// pairs of given vectors 
+
+BEGIN
+    FOR i FROM 1 TO length(vn) STEP 1  DO
+        ps = product(vn[i])
+        IF (ps = 0) THEN
+        write("the vectors are orthogonal")
+        ELSE 
+        write("the vectores are not orthogonal")
+        END_IF
+    END_FOR
+    vn = [v1, v2]
+END

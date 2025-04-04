@@ -1,0 +1,25 @@
+ALGORITHM sum_of_distinct_elements
+VAR
+    set1 = [1, 3, 8, 5 ,9, 2]
+    set2 = [7, 5, 9, 3; 8, 4]
+    distinct_elements : ARRAY_OF INTEGER[6];
+    i : INTEGER
+    sum : 0
+
+BEGIN
+    // Iterate through the elements in the first set
+    FOR i FROM 0 TO length(set1) STEP 1  DO
+        IF (set1[i]<>set2[i]) THEN distinct_elements.append(set1[i])
+        END_IF
+    END_FOR
+
+    // Iterate through the elements in the second set
+    FOR i FROM 0 TO length(set1) STEP 1  DO
+        IF (set2[i]<>set1[i]) THEN distinct_elements.append(set2[i])
+        END_IF
+    END_FOR
+    
+    // Calculate the sum of distinct elements
+    sum_of_distinct_elements = sum(distinct_elements)
+    write("The sum of the distincts elements in the given sets is egal to : " sum_of_distinct_elements)
+END
