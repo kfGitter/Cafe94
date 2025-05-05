@@ -1,0 +1,80 @@
+/* Base colors */
+.root {
+    -fx-base: #D2B48C;        /* tan */
+    -fx-background: #F5F5DC;   /* beige */
+    -fx-control-inner-background: derive(-fx-base, 40%);
+    -fx-accent: #8B4513;       /* saddle brown */
+    -fx-default-button: #A0522D; /* sienna */
+}
+
+/* Text styles */
+.label, .text {
+    -fx-text-fill: #5D4037;    /* dark brown */
+}
+
+.header-text {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3E2723;    /* darker brown */
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4E342E;    /* dark coffee brown */
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #BCAAA4; /* light brown */
+    -fx-text-fill: #3E2723;
+    -fx-padding: 8 16;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #A1887F; /* medium brown */
+}
+
+.button:pressed {
+    -fx-background-color: #8D6E63; /* pressed brown */
+}
+
+/* Text fields */
+.text-field, .password-field {
+    -fx-background-color: #EFEBE9; /* very light beige */
+    -fx-background-radius: 3;
+}
+
+/* Tabs */
+.tab-pane {
+    -fx-background-color: #EFEBE9;
+    -fx-padding: 10;
+}
+
+.tab {
+    -fx-background-color: #D7CCC8; /* light tan */
+    -fx-background-radius: 5 5 0 0;
+}
+
+.tab:selected {
+    -fx-background-color: #BCAAA4; /* selected tab color */
+}
+
+/* Error label */
+.error {
+    -fx-text-fill: #D32F2F;    /* red for errors */
+    -fx-font-weight: bold;
+}
+
+/* Tables (if you have them) */
+.table-view {
+    -fx-base: #EFEBE9;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-table-cell-border-color: transparent;
+}
+
+/* Scroll bars */
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: #EFEBE9;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="cafe.ninetyfour.controller.MainController">
+    <tabs>
+        <Tab text="Dashboard">
+            <content>
+                <fx:include fx:id="dashboardView" source="DashboardView.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Bookings">
+            <content>
+                <fx:include fx:id="bookingsView" source="BookingsView.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Orders">
+            <content>
+                <fx:include fx:id="ordersView" source="OrdersView.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="Staff">
+            <content>
+                <fx:include fx:id="staffView" source="StaffView.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
